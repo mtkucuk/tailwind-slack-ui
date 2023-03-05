@@ -1,27 +1,33 @@
 <template>
-  <div>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <div class="flex h-screen">
+    <!-- Left Sidebar -->
+    <div class="w-64 bg-gray-900">
+      <div class="w-full h-screen overflow-hidden">
+        <partials-sidebar></partials-sidebar>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <div class="flex-1 overflow-y-auto">
+      <!-- Main Content Header -->
+      <header class="bg-white shadow-lg py-4 px-6">
+
+      </header>
+      <!-- Main Content Body -->
+      <div class="p-6">
+        <!-- Body Content -->
+      </div>
+    </div>
   </div>
+
 </template>
 
 <script>
+import sidebar from "@/partials/sidebar";
 
 export default {
   name: 'App',
   components: {
+    'partials-sidebar':sidebar
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

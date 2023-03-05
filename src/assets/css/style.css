@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set height of the HTML element to 100% */
+html {
+    height: 100%;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(148 163 184 / var(--tw-text-opacity));
+    border: 1px solid var(--primary);
+}
